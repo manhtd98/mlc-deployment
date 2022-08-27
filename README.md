@@ -4,9 +4,15 @@
 - Java
 - Meka
 ### How to build
+```
 sudo docker build -t mlc .
+
+```
 ### Test your our repo 
+```
 sudo docker exec -ti mlc /bin/bash
+```
+Example run file:
 ```
 from skmultilearn.ext import Meka, download_meka
 from skmultilearn.dataset import load_dataset
