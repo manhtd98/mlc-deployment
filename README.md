@@ -8,15 +8,17 @@
 sudo docker build -t mlc .
 
 ```
-### Test your our repo 
+### Test your MEKA file
 ```
-sudo docker exec -ti mlc /bin/bash
+sudo docker run -i -t  mlc
 ```
 Example run file:
 ```
 from skmultilearn.ext import Meka, download_meka
 from skmultilearn.dataset import load_dataset
 from sklearn.metrics import hamming_loss
+import warnings
+warnings.filterwarnings('ignore')
 
 x_train, y_train, _, _ = load_dataset('scene', 'train')
 x_test, y_test, _, _ = load_dataset('scene', 'test')
