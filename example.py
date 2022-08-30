@@ -7,7 +7,7 @@ x_test, y_test, _, _ = load_dataset('scene', 'test')
 meka = Meka(
         meka_classifier = "meka.classifiers.multilabel.BR", # Binary Relevance
         weka_classifier = "weka.classifiers.bayes.NaiveBayesMultinomial", # with Naive Bayes single-label classifier
-        meka_classpath = "/root/scikit_ml_learn_data/meka/meka-release-1.9.2/lib/", #obtained via download_meka
+        meka_classpath = download_meka(), #obtained via download_meka
         java_command = '/usr/bin/java' # path to java executable
 )
 meka.fit(x_train, y_train)

@@ -3,6 +3,13 @@
 - Tensorflow 1.2.0 keras
 - Java
 - Meka
+
+### Minconda build
+```
+conda env create -f environment.yml
+python example.py
+```
+
 ### How to build
 ```
 sudo docker build -t mlc .
