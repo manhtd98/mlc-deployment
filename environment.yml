@@ -86,4 +86,3 @@ dependencies:
   - zlib=1.2.12=h7f8727e_2
   - pip:
     - mako==1.0.7
-prefix: /home/manlab/miniconda3/envs/meka
